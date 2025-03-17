@@ -54,14 +54,14 @@ const Navbar = ({ scrollToHero, scrollToFeaturedCategories, scrollToBestSellers,
                     <div className="flex-shrink-0 flex items-center">
                         <a href='/' className='flex items-center'>
                             {/* <img src={logo} alt='Divine-Energies-logo' className='w-12 h-12 md:w-14 md:h-14 rounded-full' /> */}
-                            <span className="ml-2 text-xl font-bold text-gray-900 ">ShriG</span>
+                            <span className="ml-2 text-xl font-bold text-gray-900 ">ShreeG</span>
                         </a>
                     </div>
 
                     <ul className="hidden md:flex space-x-12">
                         {navItems.map((item) => (
                             <li>
-                                <button onClick={() => scrollToSection(item.scrollTo)} className="text-gray-600 font-bold text-sm lg:text-base hover:text-indigo-600"
+                                <button onClick={() => scrollToSection(item.scrollTo)} className="text-gray-600 font-bold text-sm lg:text-base hover:text-pink-600 transition-all duration-500"
                                 >{item.name}
                                 </button>
                             </li>
@@ -72,7 +72,7 @@ const Navbar = ({ scrollToHero, scrollToFeaturedCategories, scrollToBestSellers,
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="inline-flex items-center justify-center p-2 rounded-md hover:bg-purple-300 focus:outline-none"
+                            className="inline-flex items-center justify-center p-2 rounded-md hover:bg-pink-600 focus:outline-none"
                         >                                   
                             {isMenuOpen ? <X size={24} /> : <Menu size={24} />} {/* Use react-lucide icons */}
                         </button>
@@ -83,9 +83,9 @@ const Navbar = ({ scrollToHero, scrollToFeaturedCategories, scrollToBestSellers,
             {/* Mobile Menu */}
             {isMenuOpen && (
                 <div className="md:hidden">
-                    <div className="px-2 pt-2 pb-3 bg-gradient-to-br from-purple-900 to-violet-800">
+                    <div className="px-2 pt-2 pb-3 bg-pink-600">
                         {navItems.map((item) => (
-                            <button className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-white"
+                            <button className="block w-full text-left px-3 py-2 border-b text-base font-medium text-white"
                                 key={item.name}
                                 onClick={() => scrollToSection(item.scrollTo)}
                             >

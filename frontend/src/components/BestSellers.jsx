@@ -4,7 +4,7 @@ import { products } from '../data/products';
 const BestSellers =React.forwardRef((props,ref) => {
   
   return (
-    <section ref={ref} className="py-16 md:py-20 bg-rose-50">
+    <section ref={ref} className="py-16 md:py-20 bg-pink-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
           Trending Products
@@ -31,11 +31,11 @@ const BestSellers =React.forwardRef((props,ref) => {
                   {product.name}
                 </h3>
                 <div className="flex justify-between items-center">
-                  <p className="text-pink-600 font-bold text-lg">
+                  <p className="text-pink-600 font-bold text-xs">
                     ${product.price.toFixed(2)}
                   </p>
-                  <button className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-300">
-                    Buy Now
+                  <button className="bg-pink-600 hover:bg-pink-700 text-white py-1 px-2 md:px-4 rounded-lg text-xs md:text-sm md:font-semibold transition-colors duration-300">
+                    Buy
                   </button>
                 </div>
               </div>

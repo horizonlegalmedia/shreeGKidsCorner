@@ -7,18 +7,8 @@ export const products = [
       price: 29.99,
       image: product1
     },
-    {
-      id: 2,
-      name: 'Glitter Gel Pen Set',
-      price: 12.99,
-      image: product2
-    },
-    {
-      id: 3,
-      name: 'STEM Building Blocks',
-      price: 49.99,
-      image: product3
-    },
+   
+   
     {
       id: 4,
       name: 'Personalized Party Favors',
@@ -49,11 +39,17 @@ export const products = [
       price: 8.99,
       image: product8
     },
+    // {
+    //   id: 9,
+    //   name: 'Personalized Party Favors',
+    //   price: 8.99,
+    //   image: product9
+    // },
     {
-      id: 9,
-      name: 'Personalized Party Favors',
-      price: 8.99,
-      image: product9
+      id: 2,
+      name: 'Glitter Gel Pen Set',
+      price: 12.99,
+      image: product2
     },
     {
       id: 10,
@@ -78,5 +74,11 @@ export const products = [
       name: 'Personalized Party Favors',
       price: 8.99,
       image: product16
+    },
+    {
+      id: 3,
+      name: 'STEM Building Blocks',
+      price: 49.99,
+      image: product3
     },
   ];

@@ -4,7 +4,7 @@ import { banner } from '../images/index'
 const Hero = React.forwardRef((props, ref) => {
   return (
     <section ref={ref} className="bg-gradient-to-r from-pink-50 to-blue-50 h-[calc(100vh-4rem)]">
-      <div className="grid md:grid-cols-2 gap-8 bg-amber-200">
+      <div className="grid md:grid-cols-2 gap-8">
         {/* Text Content */}
         <div className="order-2 md:order-1 text-center md:text-left px-4 md:px-8 py-12 md:py-44">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
@@ -28,14 +28,14 @@ const Hero = React.forwardRef((props, ref) => {
 
         {/* Image Content */}
         <div className="order-1 md:order-2">
-  <div className="w-full h-full bg-amber-500">
-    <img 
-      src={banner}
-      alt="Premium Toys and Stationery" 
-      className="w-full h-auto max-w-full max-h-full object-contain aspect-3/2"
-    />
-  </div>
-</div>
+          <div className="w-full h-full">
+            <img
+              src={banner}
+              alt="Premium Toys and Stationery"
+              className="w-full h-auto max-w-full max-h-full object-contain aspect-3/2"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -4,11 +4,11 @@ import { categories } from '../data/categories';
 
 const FeaturedCategories = React.forwardRef((props,ref) => {
   return (
-    <section ref={ref} className="py-16 md:py-24 bg-white">
+    <section ref={ref} className="py-16 md:py-24 bg-red-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
           Featured Categories
-          <span className="block mt-2 text-blue-600 text-xl font-medium">Explore Popular Collections</span>
+          {/* <span className="block mt-2 text-pink-600 text-xl font-medium">Explore Popular Collections</span> */}
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -35,7 +35,7 @@ const FeaturedCategories = React.forwardRef((props,ref) => {
                       key={itemIndex}
                       className="flex items-center text-gray-700"
                     >
-                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-2"></span>
+                      <span className="w-2 h-2 bg-pink-600 rounded-full mr-2"></span>
                       {item}
                     </li>
                   ))}

@@ -4,27 +4,27 @@ const Testimonials =React.forwardRef((props,ref) => {
   const reviews = [
     {
       id: 1,
-      name: "Riya Sharma",
-      location: "Mumbai",
+      name: "Shobhit",
+      location: "Bareilly",
       rating: 5,
       text: "The cutest stationery collection I've ever seen! My daughter loved the birthday return gifts we ordered. Fast delivery and excellent packaging.",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: {}
     },
     {
       id: 2,
-      name: "Arjun Patel",
-      location: "Delhi",
+      name: "Akshat",
+      location: "Moradabad",
       rating: 4,
       text: "Great quality educational toys. The STEM kits are fantastic - both fun and learning combined. Will definitely order again!",
-      image: "https://images.unsplash.com/photo-1500048993953-d23a436266cf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: {}
     },
     {
       id: 3,
-      name: "Priya Reddy",
-      location: "Bangalore",
+      name: "Suhani",
+      location: "Ghaziabad",
       rating: 5,
       text: "Absolutely love their unique designs! The premium toys are worth every penny. Best gift shop online in India!",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      image: {}
     },
     // Add more reviews as needed
   ];
@@ -43,7 +43,7 @@ const Testimonials =React.forwardRef((props,ref) => {
   };
 
   return (
-    <section ref={ref} className="py-16 md:py-24 bg-white">
+    <section ref={ref} className="py-16 md:py-24 bg-pink-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-16">
           <div className="inline-flex items-center mb-4 bg-pink-100 text-pink-800 px-6 py-2 rounded-full">
@@ -93,7 +93,7 @@ const Testimonials =React.forwardRef((props,ref) => {
         </div>
 
         {/* Trust Badge */}
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <div className="inline-flex flex-wrap items-center justify-center gap-6 bg-gray-100 px-8 py-4 rounded-full">
             <span className="text-gray-600">Proudly trusted by:</span>
             <span className="font-bold text-gray-800">1,500+</span>
@@ -101,7 +101,7 @@ const Testimonials =React.forwardRef((props,ref) => {
             <span className="font-bold text-gray-800">25,000+</span>
             <span className="text-gray-600">Parents Nationwide</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
