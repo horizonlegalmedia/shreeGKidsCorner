@@ -32,11 +32,11 @@ const BestSellers =React.forwardRef((props,ref) => {
                 </h3>
                 <div className="flex justify-between items-center">
                   <p className="text-pink-600 font-bold text-xs">
-                    ${product.price.toFixed(2)}
+                    Rs{product.price.toFixed(2)}
                   </p>
-                  <button className="bg-pink-600 hover:bg-pink-700 text-white py-1 px-2 md:px-4 rounded-lg text-xs md:text-sm md:font-semibold transition-colors duration-300">
+                  {/* <button className="bg-pink-600 hover:bg-pink-700 text-white py-1 px-2 md:px-4 rounded-lg text-xs md:text-sm md:font-semibold transition-colors duration-300">
                     Buy
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

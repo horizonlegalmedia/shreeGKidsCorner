@@ -1,4 +1,6 @@
 export { default as banner } from './banner.jpg';
+export { default as mainBanner } from './mainBanner.jpg';
+export {default as logo} from './logo.png'
 export { default as product1 } from './product1.jpg';
 export { default as product2 } from './product2.jpg';
 export { default as product3 } from './product3.jpg';

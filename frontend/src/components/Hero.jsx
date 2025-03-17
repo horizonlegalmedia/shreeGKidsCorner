@@ -1,18 +1,17 @@
 import React from 'react';
-import { banner } from '../images/index'
-
-const Hero = React.forwardRef((props, ref) => {
+import {mainBanner} from '../images/index'
+const Hero = () => {
   return (
-    <section ref={ref} className="bg-gradient-to-r from-pink-50 to-blue-50 h-[calc(100vh-4rem)]">
-      <div className="grid md:grid-cols-2 gap-8">
+    <section className='min-h-screen'>
+      <div className="grid md:grid-cols-2 md:gap-8">
         {/* Text Content */}
-        <div className="order-2 md:order-1 text-center md:text-left px-4 md:px-8 py-12 md:py-44">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+        <div className="order-2 md:order-1 text-center md:text-left px-4 md:px-8 py-12 md:py-32">
+          <h1 className="text-2xl md:text-5xl font-bold text-gray-800 mb-6">
             Premium Toys & Adorable Stationery
             <span className="block text-pink-600 mt-2">Perfect for Every Occasion!</span>
           </h1>
 
-          <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+          <p className="md:text-lg text-gray-600 mb-8 leading-relaxed">
             Find the cutest stationery, premium toys, and the best birthday return gifts—all in one place!
           </p>
 
@@ -27,18 +26,22 @@ const Hero = React.forwardRef((props, ref) => {
         </div>
 
         {/* Image Content */}
-        <div className="order-1 md:order-2">
-          <div className="w-full h-full">
-            <img
-              src={banner}
-              alt="Premium Toys and Stationery"
-              className="w-full h-auto max-w-full max-h-full object-contain aspect-3/2"
-            />
-          </div>
+        <div className="order-1 md:order-2 overflow-hidden flex items-center justify-center">
+          <img
+            src={mainBanner} // Replace with your image URL
+            alt="Premium Toys and Stationery"
+            className="object-contain w-full h-full"
+          />
         </div>
       </div>
     </section>
+
+    // <section>
+    //   <div className="bg-[url('https://img.freepik.com/free-photo/school-supplies-with-copy-space-middle_24837-89.jpg?ga=GA1.1.21085983.1740976616&semt=ais_hybrid')] bg-cover w-screen h-screen bg-no-repeat">
+
+    //   </div>
+    // </section>
   );
-});
+};
 
 export default Hero;

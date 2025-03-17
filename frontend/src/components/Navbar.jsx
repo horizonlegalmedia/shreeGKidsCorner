@@ -1,16 +1,16 @@
 import React, { useState,useEffect,useCallback } from 'react'
 import { Menu, X } from 'lucide-react'; // Import icons from react-lucide
-// import { logo } from '../images/index'
+import { logo } from '../images/index'
 
 const Navbar = ({ scrollToHero, scrollToFeaturedCategories, scrollToBestSellers, scrollToUSP, scrollToTestimonials,scrollToAboutUs,scrollToFooter }) => {
     const navItems = [
         { name: 'Home', scrollTo: scrollToHero },
         { name: 'Categories', scrollTo: scrollToFeaturedCategories },
         { name: 'Products', scrollTo: scrollToBestSellers },
-        { name: 'USP', scrollTo: scrollToUSP },
+        { name: 'Why Us', scrollTo: scrollToUSP },
         { name: "Testimonials", scrollTo: scrollToTestimonials},
         { name: "About Us", scrollTo: scrollToAboutUs},
-        { name: "Footer", scrollTo: scrollToFooter},
+        { name: "Get In Touch", scrollTo: scrollToFooter},
     ];
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -53,15 +53,15 @@ const Navbar = ({ scrollToHero, scrollToFeaturedCategories, scrollToBestSellers,
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0 flex items-center">
                         <a href='/' className='flex items-center'>
-                            {/* <img src={logo} alt='Divine-Energies-logo' className='w-12 h-12 md:w-14 md:h-14 rounded-full' /> */}
-                            <span className="ml-2 text-xl font-bold text-gray-900 ">ShreeG</span>
+                            <img src={logo} alt='Divine-Energies-logo' className='w-12 h-12 md:w-14 md:h-14 rounded-full' />
+                            <span className="ml-2 text-xl font-bold text-gray-900 ">ShriiG</span>
                         </a>
                     </div>
 
-                    <ul className="hidden md:flex space-x-12">
+                    <ul className="hidden md:flex md:space-x-8 xl:space-x-12">
                         {navItems.map((item) => (
                             <li>
-                                <button onClick={() => scrollToSection(item.scrollTo)} className="text-gray-600 font-bold text-sm lg:text-base hover:text-pink-600 transition-all duration-500"
+                                <button onClick={() => scrollToSection(item.scrollTo)} className="text-gray-600 font-bold text-sm xl:text-base hover:text-pink-600 transition-all duration-500"
                                 >{item.name}
                                 </button>
                             </li>
@@ -85,7 +85,7 @@ const Navbar = ({ scrollToHero, scrollToFeaturedCategories, scrollToBestSellers,
                 <div className="md:hidden">
                     <div className="px-2 pt-2 pb-3 bg-pink-600">
                         {navItems.map((item) => (
-                            <button className="block w-full text-left px-3 py-2 border-b text-base font-medium text-white"
+                            <button className="block w-full text-left px-3 py-2 border-b border-gray-200 text-base font-medium text-white"
                                 key={item.name}
                                 onClick={() => scrollToSection(item.scrollTo)}
                             >
