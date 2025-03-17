@@ -1,4 +1,5 @@
 import React from 'react';
+import { MessageCircle } from "lucide-react";
 import { products } from '../data/products';
 
 const BestSellers =React.forwardRef((props,ref) => {
@@ -32,7 +33,7 @@ const BestSellers =React.forwardRef((props,ref) => {
                 </h3>
                 <div className="flex justify-between items-center">
                   <p className="text-pink-600 font-bold text-xs">
-                    Rs{product.price.toFixed(2)}
+                    Rs {product.price.toFixed(2)}
                   </p>
                   {/* <button className="bg-pink-600 hover:bg-pink-700 text-white py-1 px-2 md:px-4 rounded-lg text-xs md:text-sm md:font-semibold transition-colors duration-300">
                     Buy
@@ -41,6 +42,31 @@ const BestSellers =React.forwardRef((props,ref) => {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="py-8">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          {/* WhatsApp Icon */}
+          <div className="bg-pink-500 rounded-full p-4">
+          <MessageCircle size={28} />
+          </div>
+
+          {/* Text */}
+          <h2 className="text-xl md:text-2xl font-semibold text-gray-800">
+            For More Products, Contact Us on WhatsApp!
+          </h2>
+
+          {/* WhatsApp Link */}
+          <a
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 flex items-center space-x-2"
+          >
+            <span>Chat on WhatsApp</span>
+            <MessageCircle size={28}/>
+          </a>
         </div>
       </div>
     </section>
